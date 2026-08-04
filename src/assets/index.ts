@@ -8,6 +8,7 @@ import logo from "./logo.png";
 import luban from "./luban.png";
 import roseWater from "./rose-water.jpeg";
 import tissuPaper from "./tissu-paper.png";
+import header from "./header.jpeg";
 
 export {
   agarbattiStick,
@@ -20,4 +21,5 @@ export {
   luban,
   roseWater,
   tissuPaper,
+  header,
 };
