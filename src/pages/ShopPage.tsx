@@ -18,9 +18,9 @@ const ShopPage = () => {
       <div className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 dark:from-slate-800 dark:via-slate-700 dark:to-slate-800 py-2.5 px-4 text-center border-b border-white/5">
         <a
           href="tel:+916296646995"
-          className="font-bengali inline-flex items-center gap-2 text-sm font-semibold text-amber-400 hover:text-amber-300 transition-colors tracking-wide"
+          className="font-bengali inline-flex flex-wrap items-center justify-center gap-1.5 text-xs sm:text-sm font-semibold text-amber-400 hover:text-amber-300 transition-colors tracking-wide"
         >
-          <Phone className="h-4 w-4 shrink-0 text-amber-400" />
+          <Phone className="h-3.5 w-3.5 shrink-0 text-amber-400" />
           <span className="text-white/70">Marketing Manager —</span>
           <span className="text-amber-400">+91 6296646995</span>
         </a>
@@ -38,12 +38,12 @@ const ShopPage = () => {
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 sm:px-8">
 
           {/* Bismillah row */}
-          <div className="flex items-center gap-2 sm:gap-4 mb-3">
-            <div className="h-px w-6 sm:w-14 bg-violet-300/70" />
-            <span className="font-bengali glow-white text-xs sm:text-sm font-medium tracking-widest">
+          <div className="flex items-center gap-2 sm:gap-4 mb-3 max-w-xs sm:max-w-none">
+            <div className="h-px w-4 sm:w-14 flex-shrink-0 bg-violet-300/70" />
+            <span className="font-bengali glow-white text-xs sm:text-sm font-medium tracking-wide sm:tracking-widest text-center">
               ✦ বিসমিল্লাহির রাহমানির রাহিম ✦
             </span>
-            <div className="h-px w-6 sm:w-14 bg-violet-300/70" />
+            <div className="h-px w-4 sm:w-14 flex-shrink-0 bg-violet-300/70" />
           </div>
 
           {/* Top tagline */}
