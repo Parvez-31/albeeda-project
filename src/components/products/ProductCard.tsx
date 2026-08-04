@@ -37,7 +37,7 @@ const ProductCard = ({ product, activeGender }: ProductCardProps) => {
       {/* Content */}
       <div className="flex flex-1 flex-col gap-3 p-5">
         <Link to={`/${product.id}`}>
-          <h3 className="font-bengali text-xl font-bold text-slate-900 dark:text-slate-100 leading-snug hover:text-violet-700 dark:hover:text-violet-400 transition-colors">
+          <h3 className="font-bengali text-lg sm:text-xl font-bold text-slate-900 dark:text-slate-100 leading-snug hover:text-violet-700 dark:hover:text-violet-400 transition-colors">
             {product.name}
           </h3>
         </Link>

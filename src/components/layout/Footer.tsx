@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900">
       <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          <div>
+          <div className="sm:col-span-2 lg:col-span-1">
             <Link to="/" className="flex items-center gap-2.5">
               <img src={logo} alt="Albida logo" className="h-10 w-auto object-contain" />
             </Link>

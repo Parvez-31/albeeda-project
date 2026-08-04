@@ -35,7 +35,7 @@ const ProductDetailPage = () => {
         সকল পণ্য দেখুন
       </Link>
 
-      <div className="mt-8 grid gap-10 lg:grid-cols-2 lg:gap-16">
+      <div className="mt-8 grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-16">
         {/* Image */}
         <div className="overflow-hidden rounded-3xl border border-slate-100 dark:border-slate-700/60 bg-slate-50 dark:bg-slate-800/60 p-4 shadow-md dark:shadow-slate-950/50">
           <img

@@ -57,7 +57,7 @@ const AboutPage = () => {
           </h2>
         </div>
 
-        <div className="grid gap-6 sm:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
           {values.map((v) => (
             <div
               key={v.title}
