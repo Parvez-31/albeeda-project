@@ -1,4 +1,5 @@
 import { Heart, ShieldCheck, Sparkles, Phone } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 import { logo } from "../assets";
 
 const values = [
@@ -22,6 +23,13 @@ const values = [
 const AboutPage = () => {
   return (
     <div className="dark:bg-slate-950">
+      <Helmet>
+        <title>আমাদের সম্পর্কে | আলবিদা কোম্পানি</title>
+        <meta name="description" content="আলবিদা কোম্পানি সম্পর্কে জানুন — আমাদের লক্ষ্য, মূল্যবোধ এবং সম্পূর্ণ হালাল পণ্য তৈরির প্রতিশ্রুতি।" />
+        <meta property="og:title" content="আমাদের সম্পর্কে | আলবিদা কোম্পানি" />
+        <meta property="og:description" content="আলবিদা কোম্পানির গল্প — উদ্দেশ্য ও বিশ্বাস নিয়ে গড়া একটি হালাল পণ্য প্রতিষ্ঠান।" />
+        <meta property="og:url" content="https://albida.com/about" />
+      </Helmet>
 
       {/* Story Section */}
       <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8">

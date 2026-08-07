@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { Phone } from "lucide-react";
 import ProductCard from "../components/products/ProductCard";
 import { products } from "../data/products";
@@ -14,6 +15,14 @@ const ShopPage = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>আলবিদা কোম্পানি | হালাল কাফন ও জানাজার পণ্য</title>
+        <meta name="description" content="আলবিদা কোম্পানির হালাল পণ্য সমূহ — কাফন বক্স, আতর, লুবান, গোলাপ পানি, ধূপ, কর্পূর ও আরও অনেক কিছু। সম্পূর্ণ হালাল প্রসেসে তৈরি।" />
+        <meta property="og:title" content="আলবিদা কোম্পানি | হালাল কাফন ও জানাজার পণ্য" />
+        <meta property="og:description" content="সম্পূর্ণ হালাল প্রসেসে তৈরি কাফন বক্স, আতর, লুবান ও আরও পণ্য।" />
+        <meta property="og:url" content="https://albida.com/" />
+      </Helmet>
+
       {/* Top contact bar */}
       <div className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 dark:from-slate-800 dark:via-slate-700 dark:to-slate-800 py-2.5 px-4 text-center border-b border-white/5">
         <a

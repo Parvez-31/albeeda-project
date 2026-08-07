@@ -1,5 +1,6 @@
 import { ArrowLeft } from "lucide-react";
 import { Link, useParams } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { getProductById } from "../data/products";
 
 const WHATSAPP_NUMBER = "6296646995";
@@ -29,6 +30,29 @@ const ProductDetailPage = () => {
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+      <Helmet>
+        <title>{product.name} | আলবিদা কোম্পানি</title>
+        <meta name="description" content={product.details ?? product.maleDetails ?? product.femaleDetails ?? `আলবিদা কোম্পানির ${product.name} — হালাল প্রসেসে তৈরি।`} />
+        <meta property="og:title" content={`${product.name} | আলবিদা কোম্পানি`} />
+        <meta property="og:description" content={product.details ?? product.maleDetails ?? product.femaleDetails ?? ""} />
+        <meta property="og:image" content={product.image} />
+        <meta property="og:url" content={`https://albida.com/${product.id}`} />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": product.name,
+          "image": product.image,
+          "description": product.details ?? product.maleDetails ?? product.femaleDetails,
+          "brand": { "@type": "Brand", "name": "আলবিদা কোম্পানি" },
+          "offers": {
+            "@type": "Offer",
+            "availability": "https://schema.org/InStock",
+            "priceCurrency": "INR",
+            "seller": { "@type": "Organization", "name": "আলবিদা কোম্পানি" }
+          }
+        })}</script>
+      </Helmet>
+
       {/* Back link */}
       <Link to="/" className="font-bengali inline-flex items-center gap-2 text-sm font-medium text-slate-500 dark:text-slate-400 transition-colors hover:text-violet-600 dark:hover:text-violet-400">
         <ArrowLeft className="h-4 w-4" />
