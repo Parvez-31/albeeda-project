@@ -24,15 +24,38 @@ const ShopPage = () => {
       </Helmet>
 
       {/* Top contact bar */}
-      <div className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 dark:from-slate-800 dark:via-slate-700 dark:to-slate-800 py-2.5 px-4 text-center border-b border-white/5">
-        <a
-          href="tel:+916296646995"
-          className="font-bengali inline-flex flex-wrap items-center justify-center gap-1.5 text-xs sm:text-sm font-semibold text-amber-400 hover:text-amber-300 transition-colors tracking-wide"
-        >
-          <Phone className="h-3.5 w-3.5 shrink-0 text-amber-400" />
-          <span className="text-white/70">Marketing Manager —</span>
-          <span className="text-amber-400">+91 6296646995</span>
-        </a>
+      <div className="relative overflow-hidden bg-gradient-to-r from-green-900 via-green-800 to-green-900 py-3 px-4 text-center">
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent" />
+        <div className="relative font-bengali inline-flex flex-wrap items-center justify-center gap-3 sm:gap-6">
+          {/* Left ornament */}
+          <span className="hidden sm:inline text-green-300/50 text-lg">✦</span>
+
+          {/* First contact */}
+          <a
+            href="tel:+916296646995"
+            className="inline-flex items-center gap-1.5 transition-opacity hover:opacity-80"
+          >
+            <Phone className="h-3.5 w-3.5 shrink-0 text-green-300" />
+            <span className="text-green-100/80 text-xs sm:text-sm">Marketing Manager</span>
+            <span className="text-amber-300 font-bold text-xs sm:text-sm tracking-widest">+91 6296646995</span>
+          </a>
+
+          {/* Divider */}
+          <span className="text-green-300/40 text-lg hidden sm:inline">|</span>
+
+          {/* Second contact */}
+          <a
+            href="tel:+919563710151"
+            className="inline-flex items-center gap-1.5 transition-opacity hover:opacity-80"
+          >
+            <Phone className="h-3.5 w-3.5 shrink-0 text-green-300" />
+            <span className="text-green-100/80 text-xs sm:text-sm">Marketing Developer</span>
+            <span className="text-amber-300 font-bold text-xs sm:text-sm tracking-widest">+91 9563710151</span>
+          </a>
+
+          {/* Right ornament */}
+          <span className="hidden sm:inline text-green-300/50 text-lg">✦</span>
+        </div>
       </div>
 
       {/* Hero Section */}
@@ -49,15 +72,13 @@ const ShopPage = () => {
           {/* Bismillah row */}
           <div className="flex items-center gap-2 sm:gap-4 mb-3 max-w-xs sm:max-w-none">
             <div className="h-px w-4 sm:w-14 flex-shrink-0 bg-violet-300/70" />
-            <span className="font-bengali glow-white text-xs sm:text-sm font-medium tracking-wide sm:tracking-widest text-center">
-              ✦ বিসমিল্লাহির রাহমানির রাহিম ✦
-            </span>
+
             <div className="h-px w-4 sm:w-14 flex-shrink-0 bg-violet-300/70" />
           </div>
 
           {/* Top tagline */}
-          <p className="font-bengali glow-gold text-xl sm:text-3xl lg:text-4xl font-bold tracking-wide mb-3">
-            আপনার বিদায়ী সাজ
+          <p className="font-bengali text-4xl sm:text-6xl lg:text-7xl font-bold tracking-wide mb-3" style={{ color: "#14532d" }}>
+             বিদায়ী সাজ
           </p>
 
           {/* Glowing underline */}
@@ -67,15 +88,10 @@ const ShopPage = () => {
             <div className="h-0.5 w-6 rounded-full bg-violet-400/60" />
           </div>
 
-          {/* Main title */}
-          <h1 className="font-bengali glow-violet text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-            আলবিদা কোম্পানি
-          </h1>
+    
 
           {/* Subtitle */}
-          <p className="font-bengali glow-white mt-4 text-sm sm:text-base lg:text-lg max-w-xs sm:max-w-sm leading-relaxed">
-            সম্পূর্ণ হালাল প্রসেসে তৈরি আমাদের বিশেষ পণ্য সমূহ
-          </p>
+ 
 
           {/* Bottom ornament */}
           <div className="flex items-center gap-2 mt-5">
