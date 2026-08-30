@@ -16,7 +16,7 @@ const ProductCard = ({ product, activeGender }: ProductCardProps) => {
         : product.femaleDetails
       : product.details;
 
-  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`আসসালামু আলাইকুম, আমি ${product.name} সম্পর্কে জানতে চাই।`)}`;
+  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`আসসালামু আলাইকুম, আমি কাফন বক্স সম্পর্কে জানতে চাই।`)}`;
 
   return (
     <div className="group flex flex-col overflow-hidden rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-700/60 shadow-md dark:shadow-slate-950/60 transition-all duration-300 hover:shadow-xl dark:hover:shadow-violet-950/40 hover:-translate-y-1">
