@@ -86,3 +86,26 @@ body {
       0 0 90px rgba(217, 119, 6, 0.5);
   }
 }
+
+/* Slide transition for SlidingProductCard */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%) scale(0.96);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutLeft {
+  from {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%) scale(0.96);
+    opacity: 0;
+  }
+}

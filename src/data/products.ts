@@ -1,4 +1,19 @@
-import { agarbattiStick, attar, cafon, cotton, handGloves, karpoor, luban, roseWater, tissuPaper } from "../assets";
+import {
+  agarbattiStick,
+  attar,
+  cafon,
+  cotton,
+  handGloves,
+  karpoor,
+  luban,
+  roseWater,
+  tissuPaper,
+  male1,
+  male2,
+  female1,
+  female2,
+  soap,
+} from "../assets";
 
 export type Gender = "male" | "female";
 
@@ -13,9 +28,30 @@ export type Product = {
   category: string;
   gender: Gender;
   image: string;
+  images?: string[];
 };
 
 export const products: Product[] = [
+  {
+    id: "0",
+    name: "পুরুষ কাফন বক্স",
+    details:
+      "আলবিদা কোম্পানির বিশেষ পুরুষ কাফন বক্স — জমজম পানি ব্যবহৃত সম্পূর্ণ হালাল প্রসেসে তৈরি।",
+    category: "কাফন বক্স",
+    gender: "male",
+    image: male1,
+    images: [male1, male2],
+  },
+  {
+    id: "00",
+    name: "মহিলা কাফন বক্স",
+    details:
+      "আলবিদা কোম্পানির বিশেষ মহিলা কাফন বক্স — জমজম পানি ব্যবহৃত সম্পূর্ণ হালাল প্রসেসে তৈরি।",
+    category: "কাফন বক্স",
+    gender: "female",
+    image: female1,
+    images: [female1, female2],
+  },
   {
     id: "1",
     name: "আতর",
@@ -28,8 +64,7 @@ export const products: Product[] = [
   {
     id: "2",
     name: "লুবান",
-    details:
-      "এটি আলবিদা কোম্পানির লুবান এটি গুঁড়ো করে রেডি করা আছে।",
+    details: "এটি আলবিদা কোম্পানির লুবান এটি গুঁড়ো করে রেডি করা আছে।",
     category: "লুবান",
     gender: "male",
     image: luban,
@@ -47,7 +82,7 @@ export const products: Product[] = [
     id: "4",
     name: "গোলাপ পানি",
     details:
-      "এটি আলবিদা কোম্পানির নিজস্ব গোলাপ পানি, এটি বাইরে আপনি কোথাও পাবেন না। আলবিদা কোম্পানি হালাল প্রসেসে এটিকের রেডি করেছে।(ইঃ আঃ)",
+      "এটি আলবিদা কোম্পানির নিজস্ব গোলাপ পানি, এটি বাইরে আপনি কোথাও পাবেন না। আলবিদা কোম্পানি হালাল প্রসেসে এটিকে রেডি করেছে।",
     category: "গোলাপ পানি",
     gender: "female",
     image: roseWater,
@@ -64,15 +99,14 @@ export const products: Product[] = [
   {
     id: "6",
     name: "কর্পূর",
-    details:
-      "এটি আলবিদা কোম্পানির ভুল করে ব্যবহারের উপযুক্ত করে দিয়েছেন।",
+    details: "এটি আলবিদা কোম্পানির ভুল করে ব্যবহারের উপযুক্ত করে দিয়েছেন।",
     category: "কর্পূর",
     gender: "male",
     image: karpoor,
   },
   {
     id: "7",
-    name: "কাফন বক্স",
+    name: "কাফন কাপড়",
     maleDetails:
       "এটি পুরুষের আলবীদা কোম্পানির জম জম পানি ব্যবহৃত কাফনের কাপড়। এখানে তিনটি কাপড় আছে, একজন প্রাপ্তবয়স্ক পুরুষের সাইজ অনুযায়ী কাটা আছে।",
     femaleDetails:
@@ -98,6 +132,24 @@ export const products: Product[] = [
     category: "টিসু পেপার",
     gender: "female",
     image: tissuPaper,
+  },
+  {
+    id: "10",
+    name: "সাবান",
+    details:
+      "আলবিদা কোম্পানির বিশেষ সাবান — মাইয়েতের গোসলের জন্য হালাল প্রসেসে তৈরি। কোনো চর্বি বা অ্যালকোহল ব্যবহার করা হয়নি।",
+    category: "সাবান",
+    gender: "male",
+    image: soap,
+  },
+  {
+    id: "11",
+    name: "সাবান",
+    details:
+      "আলবিদা কোম্পানির বিশেষ সাবান — মাইয়েতের গোসলের জন্য হালাল প্রসেসে তৈরি। কোনো চর্বি বা অ্যালকোহল ব্যবহার করা হয়নি।",
+    category: "সাবান",
+    gender: "female",
+    image: soap,
   },
 ];
 

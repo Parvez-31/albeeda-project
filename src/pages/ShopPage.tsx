@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Phone } from "lucide-react";
 import ProductCard from "../components/products/ProductCard";
+import SlidingProductCard from "../components/products/SlidingProductCard";
 import { products } from "../data/products";
 import { header } from "../assets";
 
@@ -131,13 +132,32 @@ const ShopPage = () => {
 
         {/* Product grid */}
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {products.map((product) => (
-            <ProductCard
-              key={product.id}
-              product={product}
-              activeGender={tab as "male" | "female"}
-            />
-          ))}
+          {products.map((product) => {
+            // Sliding cards — only show on matching gender tab
+            if (product.images && product.images.length > 1) {
+              return product.gender === tab ? (
+                <SlidingProductCard key={product.id} product={product} />
+              ) : null;
+            }
+            // Soap cards — only show on matching gender tab
+            if (product.category === "সাবান") {
+              return product.gender === tab ? (
+                <ProductCard
+                  key={product.id}
+                  product={product}
+                  activeGender={tab as "male" | "female"}
+                />
+              ) : null;
+            }
+            // All other products — show on both tabs
+            return (
+              <ProductCard
+                key={product.id}
+                product={product}
+                activeGender={tab as "male" | "female"}
+              />
+            );
+          })}
         </div>
       </div>
     </div>
