@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import type { Product, Gender } from "../../data/products";
 
-const WHATSAPP_NUMBER = "6296646995";
+const WHATSAPP_NUMBER = "916296646995";
 
 type ProductCardProps = {
   product: Product;

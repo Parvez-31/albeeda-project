@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { getProductById } from "../data/products";
 
-const WHATSAPP_NUMBER = "6296646995";
+const WHATSAPP_NUMBER = "916296646995";
 
 const ProductDetailPage = () => {
   const { id } = useParams<{ id: string }>();

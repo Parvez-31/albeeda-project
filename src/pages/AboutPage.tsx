@@ -97,7 +97,7 @@ const AboutPage = () => {
             যেকোনো প্রশ্ন বা অর্ডারের জন্য আমাদের WhatsApp করুন
           </p>
           <a
-            href="https://wa.me/6296646995"
+            href="https://wa.me/916296646995"
             target="_blank"
             rel="noopener noreferrer"
             className="font-bengali inline-flex items-center gap-2 rounded-2xl bg-white px-8 py-3.5 text-base font-bold text-violet-700 shadow-md transition-all hover:shadow-lg hover:scale-105 active:scale-95"
