@@ -91,7 +91,7 @@ const AboutPage = () => {
       </section>
 
       {/* ── Values Section ── */}
-      <section className="mx-auto max-w-5xl px-4 py-8 sm:px-6 lg:px-8">
+      {/* <section className="mx-auto max-w-5xl px-4 py-8 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
           <p className="font-bengali text-xs font-semibold uppercase tracking-widest text-violet-600 dark:text-violet-400 mb-2">
             আমাদের মূল্যবোধ
@@ -100,37 +100,37 @@ const AboutPage = () => {
             কেন আমরা আলাদা?
           </h2>
           <div className="mx-auto mt-4 h-1 w-14 rounded-full bg-violet-400 dark:bg-violet-500" />
-        </div>
+        </div> */}
 
-        <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+        {/* <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
           {values.map((v) => (
             <div
               key={v.title}
               className="group relative overflow-hidden rounded-2xl border border-slate-100 dark:border-slate-700/60 bg-white dark:bg-slate-900 p-7 shadow-sm dark:shadow-slate-950/40 hover:shadow-lg dark:hover:shadow-violet-950/30 hover:-translate-y-1 transition-all duration-300 text-center"
-            >
+            > */}
               {/* Background glow on hover */}
-              <div className="absolute inset-0 bg-gradient-to-br from-violet-50 to-transparent dark:from-violet-900/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+              {/* <div className="absolute inset-0 bg-gradient-to-br from-violet-50 to-transparent dark:from-violet-900/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
 
               <div className="relative mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-violet-100 dark:bg-violet-900/40 text-violet-600 dark:text-violet-400 group-hover:bg-violet-600 group-hover:text-white dark:group-hover:bg-violet-600 transition-colors duration-300 shadow-sm">
                 <v.icon className="h-7 w-7" />
               </div>
               <h3 className="relative font-bengali text-lg font-bold text-slate-900 dark:text-slate-100 mb-2">
                 {v.title}
-              </h3>
-              <div className="relative mx-auto mb-3 h-0.5 w-10 rounded-full bg-violet-300 dark:bg-violet-700 group-hover:w-16 transition-all duration-300" />
+              </h3> */}
+              {/* <div className="relative mx-auto mb-3 h-0.5 w-10 rounded-full bg-violet-300 dark:bg-violet-700 group-hover:w-16 transition-all duration-300" />
               <p className="relative font-bengali text-sm leading-relaxed text-slate-600 dark:text-slate-400">
                 {v.desc}
               </p>
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* ── Contact CTA ── */}
-      <section className="mx-auto max-w-4xl px-4 py-8 pb-20 sm:px-6 lg:px-8">
-        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 dark:from-slate-800 dark:to-slate-800 p-8 sm:p-12 text-center shadow-2xl">
+      {/* <section className="mx-auto max-w-4xl px-4 py-8 pb-20 sm:px-6 lg:px-8">
+        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 dark:from-slate-800 dark:to-slate-800 p-8 sm:p-12 text-center shadow-2xl"> */}
           {/* Decorative blobs */}
-          <div className="absolute -top-10 -left-10 h-40 w-40 rounded-full bg-violet-600/20 blur-2xl pointer-events-none" />
+          {/* <div className="absolute -top-10 -left-10 h-40 w-40 rounded-full bg-violet-600/20 blur-2xl pointer-events-none" />
           <div className="absolute -bottom-10 -right-10 h-40 w-40 rounded-full bg-green-600/20 blur-2xl pointer-events-none" />
 
           <div className="relative">
@@ -154,7 +154,7 @@ const AboutPage = () => {
             </a>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
